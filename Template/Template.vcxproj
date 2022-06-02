@@ -97,8 +97,8 @@ copy /Y "$(TargetPath)" "$(LocalDebuggerWorkingDirectory)\plugins\"
     <ResourceCompile Include="Resource.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\SDK\Lib\sqlite3.lib" />
-    <Library Include="..\SDK\Lib\SQLiteCpp.lib" />
+    <Library Include="..\libs\sqlite3.lib" />
+    <Library Include="..\libs\SQLiteCpp.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

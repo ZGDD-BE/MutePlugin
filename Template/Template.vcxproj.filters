@@ -45,10 +45,10 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\SDK\Lib\sqlite3.lib">
+    <Library Include="..\libs\sqlite3.lib">
       <Filter>Source</Filter>
     </Library>
-    <Library Include="..\SDK\Lib\SQLiteCpp.lib">
+    <Library Include="..\libs\SQLiteCpp.lib">
       <Filter>Source</Filter>
     </Library>
   </ItemGroup>
