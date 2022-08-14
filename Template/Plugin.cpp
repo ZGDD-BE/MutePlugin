@@ -64,7 +64,7 @@ public:
 				Mute->exec("delete from Mute where XUID='" + PlayerInfo::getXuid(inpu) + "'");
 				Mute->exec("VACUUM");
 				Mute->exec("INSERT INTO Mute(XUID,TIMES,TIMESTAMPS) VALUES('" + PlayerInfo::getXuid(inpu) + "'," + std::to_string(inpuint) + "," + std::to_string(time(NULL)) + ")");
-				output.success("玩家：" + inpu + "已被更新禁言时长，时间：" + std::to_string(inpuint) + "min");
+				output.success("玩家：" + inpu + "已被更新禁言时长，时间：" + std::to_string(inpuint) + "s");
 			}
 			break;
 		}
@@ -80,7 +80,7 @@ public:
 				Mute->exec("delete from Mute where XUID='" + PlayerInfo::getXuid(inpu) + "'");
 				Mute->exec("VACUUM");
 				Mute->exec("INSERT INTO Mute(XUID,TIMES,TIMESTAMPS) VALUES('" + PlayerInfo::getXuid(inpu) + "'," + std::to_string(inputmin) + "," + std::to_string(time(NULL)) + ")");
-				output.success("玩家：" + inpu + "已被更新禁言时长，时间：" + std::to_string(inpuint) + "s");
+				output.success("玩家：" + inpu + "已被更新禁言时长，时间：" + std::to_string(inpuint) + "min");
 			}
 			break;
 		}
