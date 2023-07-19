@@ -19,7 +19,7 @@ jobs:
       
     - name: Push
       run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git commit -am "fetch upstream SDK" || exit 0
+        git config --global user.name "dofes"
+        git config --global user.email "91889957+dofes@users.noreply.github.com"
+        git commit -am "chore: update SDK" || exit 0
         git push || exit 0
